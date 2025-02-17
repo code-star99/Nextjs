@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140vw;
+  height: 140vh;
+  z-index: -1;
+  background-image: url("/images/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(5px) brightness(0.6);
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  @apply font-sans bg-background text-foreground;
+  cursor: url("/cursor/normal-32.png"), auto;
+}
+
+.c-cursor-pointer {
+  cursor: url("/cursor/pointer-32.png"), auto;
+}
+
+.c-cursor-text {
+  cursor: url("/cursor/text-32.png"), auto;
+}
+
+@layer base {
+  :root {
+    --radius: 10px;
+
+    /* Color Palette */
+    --color-1: #876aca;
+    --color-2: #d969ba;
+    --color-3: #ff779a;
+    --color-4: #ff9a77;
+    --color-5: #ffc962;
+    --color-6: #f9f871;
+
+    /* Background and Foreground */
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: var(--background);
+    --card-foreground: var(--foreground);
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
+
+    --primary: var(--color-2);
+    --secondary: var(--color-1);
+
+    --primary-foreground: var(--foreground);
+    --secondary-foreground: var(--foreground);
+
+    /* Muted & Accent */
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Destructive */
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: var(--foreground);
+
+    /* Border & Input */
+    --border: var(--secondary);
+    --input: var(--secondary);
+    --ring: 216 12.2% 83.9%;
+
+    /* Charts */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  * {
+    @apply border-border box-border;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    @apply ring-2 ring-ring;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+

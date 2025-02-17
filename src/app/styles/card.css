@@ -1,0 +1,154 @@
+.hover-card {
+  transition: transform 300ms ease-out, box-shadow 400ms ease-out;
+  transform: rotate3d(0);
+  border-radius: 20px;
+  position: relative;
+  min-height: 26rem;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 1px 5px #00000047;
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #00000000);
+}
+
+.hover-card:hover {
+  border-radius: 20px;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.rotating-glow {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--color-1) 50%,
+    var(--color-2)
+  );
+  opacity: 0.18;
+  transition: opacity 0.5s;
+  animation: spin 3s linear infinite;
+  border-radius: 20px;
+  will-change: opacity, transform;
+  border-radius: 20px;
+}
+
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.hover-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  border-radius: 20px;
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card-badges img {
+  margin-right: 5px;
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-img-top:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.glow {
+  transition: text-shadow 1s;
+}
+
+.glow:hover {
+  text-shadow: 0.1px 0.1px 10px var(--secondary);
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card-badges img {
+  margin-right: 5px;
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}

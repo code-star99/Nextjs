@@ -1,0 +1,307 @@
+{
+   "siteMetadata":{
+      "title":"Portfolio - Maxim",
+      "description":"Portfolio page by max1mde"
+   },
+   "global":{
+      "font":"roboto",
+      "home_route":"/home",
+      "custom_cursor":{
+         "enabled":false,
+         "sparkles":true,
+         "transitions":true,
+         "move_speed":0.05
+      }
+   },
+   "footer":{
+      "text":"© 2024 Maxim - All rights reserved.",
+      "links":[
+         {
+            "label":"GitHub",
+            "url":"https://github.com/max1mde/portfolio"
+         },
+         {
+            "label":"Contact",
+            "url":"/contact"
+         },
+         {
+            "label":"Privacy",
+            "url":"/privacy"
+         }
+      ]
+   },
+   "pages":{
+      "home":{
+         "enabled":true,
+         "route":"/home",
+         "profile_image":"https://avatars.githubusercontent.com/u/114857048?v=4",
+         "gradient": "#cc96ff:#fa649d",
+         "about_me":"Hi, I'm ~~~Maxim!~~~",
+         "description":"I like to bring random ideas to reality.",
+         "tools_languages_title":"Tools & Languages",
+         "languages":[
+            "Java",
+            "JavaScript",
+            "TypeScript",
+            "Python"
+         ],
+         "tools":[
+            "Next.js",
+            "MongoDB",
+            "Intellij",
+            "MariaDB",
+            "Pycharm",
+            "FIX",
+            "Git"
+         ],
+         "action_buttons":[
+            {
+               "label":"My Projects",
+               "route":"/projects",
+               "style":"primary"
+            },
+            {
+               "label":"Source Code",
+               "route":"https://github.com/max1mde/portfolio",
+               "style":"secondary"
+            }
+         ],
+         "experience":{
+            "enabled":true,
+            "title":"My Experience",
+            "list":[
+               {
+                  "title":"Software Developer",
+                  "company":"India Solutions",
+                  "date":"2023 - Present",
+                  "description":"Developing highly effective phishing tools and creating innovative callcenter software solutions using cutting-edge technologies to improve the customer experience.",
+                  "side":"left"
+               },
+               {
+                  "title":"Planetary Mineralogy Specialist",
+                  "company":"NASA",
+                  "date":"2022 - 2023",
+                  "description":"Led the inspection, analysis, and cataloging of unique mineral deposits found on Mars, including the discovery of the Jerome T. K. mineral.",
+                  "side":"right"
+               },
+               {
+                  "title":"Certified Pandemic Survivor",
+                  "company":"Self-employed",
+                  "date":"2020 - 2022",
+                  "description":"Managed Zoom meetings while playing Bedwars and Among Us, effectively balancing work and gaming.",
+                  "side":"left"
+               }
+            ]
+         }
+      },
+      "projects":{
+         "enabled":true,
+         "header":"My Projects",
+         "route":"/projects"
+      },
+      "contact":{
+         "enabled":true,
+         "header":"Socials",
+         "route":"/contact",
+         "email":"maxim@nextfight.net",
+         "direct_contact":"Reach Me Directly",
+         "legal":{
+            "enabled":true,
+            "name":"Maxim",
+            "address":"Vaitape - Bora Bora",
+            "email":"maxim@nextfight.net",
+            "phone":"911",
+            "tax_id":"Not Applicable",
+            "legal_disclaimer":"This is a personal portfolio website for informational purposes."
+         },
+         "social_links":[
+            {
+               "name":"GitHub",
+               "url":"https://github.com/max1mde",
+               "icon":"github"
+            },
+            {
+               "name":"TikTok",
+               "url":"https://tiktok.com/@maximde",
+               "icon":"tiktok"
+            },
+            {
+               "name":"YouTube",
+               "url":"https://www.youtube.com/@max1mde",
+               "icon":"youtube"
+            }
+         ],
+         "contact_form":{
+            "enabled":true,
+            "send_button":"Send Message",
+            "success_message":"Message sent successfully!",
+            "failure_message":"Failed to send message. Please try again.",
+            "error_message":"An error occurred. Please try again.",
+            "fields":[
+               {
+                  "name":"name",
+                  "label":"Your Name",
+                  "type":"text",
+                  "required":true
+               },
+               {
+                  "name":"email",
+                  "label":"Your Email",
+                  "type":"email",
+                  "required":true
+               },
+               {
+                  "name":"message",
+                  "label":"Your Message",
+                  "type":"textarea",
+                  "required":true
+               }
+            ]
+         }
+      },
+      "privacy":{
+         "enabled":false,
+         "header":"Privacy Policy",
+         "route":"/privacy",
+         "content":{
+            "contact_title":"Contact",
+            "contact":"maxim@netfight.net",
+            "introduction":"This portfolio website is designed with minimal data collection and maximum user privacy in mind.",
+            "sections":[
+               {
+                  "title":"Information Collection",
+                  "description":"We collect the following types of information:",
+                  "details":[
+                     "Name, email, and message content submitted through the contact form",
+                     "IP address for rate limiting and security purposes",
+                     "Potential tracking of client-side interactions for website functionality"
+                  ]
+               },
+               {
+                  "title":"Data Processing and Storage",
+                  "description":"Data collection and processing details:",
+                  "details":[
+                     "Contact form submissions are processed in-memory and not permanently stored",
+                     "IP addresses are temporarily tracked for rate limiting (maximum 30 minutes)",
+                     "No persistent user data is saved or stored long-term"
+                  ]
+               },
+               {
+                  "title":"Third-Party Services",
+                  "description":"Potential data collection by third-party services:",
+                  "details":[
+                     "Image hosting services (e.g., shields.io) may collect IP address during image requests",
+                     "Standard browser and server logs may capture additional metadata"
+                  ]
+               },
+               {
+                  "title":"Data Protection",
+                  "description":"We implement the following protection measures:",
+                  "details":[
+                     "Rate limiting to prevent abuse of contact form",
+                     "Validation of submitted form data",
+                     "No storage of sensitive personal information"
+                  ]
+               },
+               {
+                  "title":"User Rights",
+                  "description":"Users have the right to:",
+                  "details":[
+                     "Request information about data collection",
+                     "Request deletion of any potential stored information",
+                     "Opt-out of non-essential data collection"
+                  ]
+               }
+            ]
+         }
+      }
+   },
+   "card":{
+      "pop_in":true,
+      "hover_effect":true,
+      "hover_glow":true,
+      "image_shine":true
+   },
+   "cards":[
+      {
+         "title":"Portfolio (This website)",
+         "description":"Customizable, responsive, portfolio website built with Next.js",
+         "imageSRC":"/images/projects/portfolio.webp",
+         "buttonText":"View on GitHub",
+         "buttonURL":"https://github.com/max1mde/portfolio",
+         "badges":[
+            "https://img.shields.io/github/stars/max1mde/portfolio.svg?style=flat"
+         ]
+      },
+      {
+         "title":"Fancy Physics",
+         "description":"Tree fall animation, hit particles, realistic explosions, 3D particles & more",
+         "imageSRC":"/images/projects/fancyphysics.webp",
+         "buttonText":"View on SpigotMC",
+         "buttonURL":"https://www.spigotmc.org/resources/110500/",
+         "badges":[
+            "https://img.shields.io/spiget/downloads/110500"
+         ]
+      },
+      {
+         "title":"Better Chat Bubbles",
+         "description":"Packet based chat bubbles above players head, with an extensive API",
+         "imageSRC":"/images/projects/betterchatbubbles.webp",
+         "buttonText":"Buy on SpigotMC",
+         "buttonURL":"https://www.spigotmc.org/resources/115811/",
+         "badges":[
+            "https://img.shields.io/spiget/downloads/115811"
+         ]
+      },
+      {
+         "title":"Fancy Readme Stats",
+         "description":"Animated Readme Cards - For your GitHub profile or repository readme",
+         "imageSRC":"/images/projects/readmestats.webp",
+         "buttonText":"View on GitHub",
+         "buttonURL":"https://github.com/max1mde/fancy-readme-stats",
+         "badges":[
+            "https://img.shields.io/github/stars/max1mde/fancy-readme-stats.svg?style=flat"
+         ]
+      },
+      {
+         "title":"HologramAPI",
+         "description":"Packet based text display hologram api with minimessage and emoji support",
+         "imageSRC":"/images/projects/hologramapi.webp",
+         "buttonText":"View on GitHub",
+         "buttonURL":"https://github.com/max1mde/HologramAPI",
+         "badges":[
+            "https://img.shields.io/github/stars/max1mde/HologramAPI.svg?style=flat"
+         ]
+      },
+      {
+         "title":"Nextfight",
+         "description":"Nextfight is a Minecraft minigame network focused on a Battle Royale like gamemode",
+         "imageSRC":"/images/projects/nextfight.webp",
+         "buttonText":"Join the Discord",
+         "buttonURL":"https://discord.nextfight.net/",
+         "badges":[
+            "https://img.shields.io/discord/1051758423211003951"
+         ]
+      },
+      {
+         "title":"MaximClient",
+         "description":"MaximClient was a 1.8 PVP client with many mods and free online cosmetics",
+         "imageSRC":"/images/projects/maximclient.webp",
+         "buttonText":"Join the Discord",
+         "buttonURL":"https://discord.gg/eCn8VWEGbZ",
+         "badges":[
+            "https://img.shields.io/discord/895012337793249341"
+         ]
+      },
+      {
+         "title":"FIX",
+         "description":"A Windows tool for AI text correction and translation with hotkeys & voice control",
+         "imageSRC":"/images/projects/fix.webp",
+         "buttonText":"View on GitHub",
+         "buttonURL":"https://github.com/max1mde/FIX",
+         "badges":[
+            "https://img.shields.io/github/stars/max1mde/FIX.svg?style=flat"
+         ]
+      }
+   ]
+}
